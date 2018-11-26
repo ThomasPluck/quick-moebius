@@ -7,15 +7,8 @@ Simple repository for quick implementation of rendering and exploration of limit
 * numpy
 * matplotlib
 
-**Example Usage:**
+**Brief File Description**
 
-```python
-import numpy as np
-from mobius_maps import MoebiusTransform, SemiGroup
-
-m_1 = MoebiusTransform((1+0j,0+1j,0+0j,-1+1j))
-m_2 = MoebiusTransform(np.array([[0+1j,0+0j],[0+0j,0+1j]]))
-
-sg = SemiGroup([m1,m2])
-sg.compute_limits(3)
-```
+* actual_semiklein.py - Familiar plug and chug discovery of limit points as implemented in Indra's Pearls
+* fast_klein.py - Python implementation of [Jos Ley's Escape-Time Algorithm for Kleinian Group Limit Sets](http://www.josleys.com/articles/Kleinian%20escape-time_3.pdf)
+* semigroup_leysklein.py - Adaptation of Jos Ley's algorithm for computing [forward and backward limit sets of Kleinian semigroups](https://arxiv.org/abs/1609.00576)
